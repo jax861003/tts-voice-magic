@@ -1051,29 +1051,177 @@ const HTML_PAGE = `
                     <div class="controls-grid">
                         <div class="form-group">
                             <label class="form-label" for="voice">语音选择</label>
+                            <!-- ========== 修改开始：语音选择下拉框增加语言分组 ========== -->
                             <select class="form-select" id="voice">
-                                <option value="zh-CN-XiaoxiaoNeural">晓晓 (女声·温柔)</option>
-                                <option value="zh-CN-YunxiNeural">云希 (男声·清朗)</option>
-                                <option value="zh-CN-YunyangNeural">云扬 (男声·阳光)</option>
-                                <option value="zh-CN-XiaoyiNeural">晓伊 (女声·甜美)</option>
-                                <option value="zh-CN-YunjianNeural">云健 (男声·稳重)</option>
-                                <option value="zh-CN-XiaochenNeural">晓辰 (女声·知性)</option>
-                                <option value="zh-CN-XiaohanNeural">晓涵 (女声·优雅)</option>
-                                <option value="zh-CN-XiaomengNeural">晓梦 (女声·梦幻)</option>
-                                <option value="zh-CN-XiaomoNeural">晓墨 (女声·文艺)</option>
-                                <option value="zh-CN-XiaoqiuNeural">晓秋 (女声·成熟)</option>
-                                <option value="zh-CN-XiaoruiNeural">晓睿 (女声·智慧)</option>
-                                <option value="zh-CN-XiaoshuangNeural">晓双 (女声·活泼)</option>
-                                <option value="zh-CN-XiaoxuanNeural">晓萱 (女声·清新)</option>
-                                <option value="zh-CN-XiaoyanNeural">晓颜 (女声·柔美)</option>
-                                <option value="zh-CN-XiaoyouNeural">晓悠 (女声·悠扬)</option>
-                                <option value="zh-CN-XiaozhenNeural">晓甄 (女声·端庄)</option>
-                                <option value="zh-CN-YunfengNeural">云枫 (男声·磁性)</option>
-                                <option value="zh-CN-YunhaoNeural">云皓 (男声·豪迈)</option>
-                                <option value="zh-CN-YunxiaNeural">云夏 (男声·热情)</option>
-                                <option value="zh-CN-YunyeNeural">云野 (男声·野性)</option>
-                                <option value="zh-CN-YunzeNeural">云泽 (男声·深沉)</option>
+                                <optgroup label="🇨🇳 中文 (简体)">
+                                    <option value="zh-CN-XiaoxiaoNeural">晓晓 (女声·温柔)</option>
+                                    <option value="zh-CN-YunxiNeural">云希 (男声·清朗)</option>
+                                    <option value="zh-CN-YunyangNeural">云扬 (男声·阳光)</option>
+                                    <option value="zh-CN-XiaoyiNeural">晓伊 (女声·甜美)</option>
+                                    <option value="zh-CN-YunjianNeural">云健 (男声·稳重)</option>
+                                    <option value="zh-CN-XiaochenNeural">晓辰 (女声·知性)</option>
+                                    <option value="zh-CN-XiaohanNeural">晓涵 (女声·优雅)</option>
+                                    <option value="zh-CN-XiaomengNeural">晓梦 (女声·梦幻)</option>
+                                    <option value="zh-CN-XiaomoNeural">晓墨 (女声·文艺)</option>
+                                    <option value="zh-CN-XiaoqiuNeural">晓秋 (女声·成熟)</option>
+                                    <option value="zh-CN-XiaoruiNeural">晓睿 (女声·智慧)</option>
+                                    <option value="zh-CN-XiaoshuangNeural">晓双 (女声·活泼)</option>
+                                    <option value="zh-CN-XiaoxuanNeural">晓萱 (女声·清新)</option>
+                                    <option value="zh-CN-XiaoyanNeural">晓颜 (女声·柔美)</option>
+                                    <option value="zh-CN-XiaoyouNeural">晓悠 (女声·悠扬)</option>
+                                    <option value="zh-CN-XiaozhenNeural">晓甄 (女声·端庄)</option>
+                                    <option value="zh-CN-YunfengNeural">云枫 (男声·磁性)</option>
+                                    <option value="zh-CN-YunhaoNeural">云皓 (男声·豪迈)</option>
+                                    <option value="zh-CN-YunxiaNeural">云夏 (男声·热情)</option>
+                                    <option value="zh-CN-YunyeNeural">云野 (男声·野性)</option>
+                                    <option value="zh-CN-YunzeNeural">云泽 (男声·深沉)</option>
+                                </optgroup>
+                                <optgroup label="🇺🇸 English (US)">
+                                    <option value="en-US-JennyNeural">Jenny (Female)</option>
+                                    <option value="en-US-GuyNeural">Guy (Male)</option>
+                                    <option value="en-US-AriaNeural">Aria (Female·Stylish)</option>
+                                    <option value="en-US-DavisNeural">Davis (Male·Friendly)</option>
+                                    <option value="en-US-JaneNeural">Jane (Female·Warm)</option>
+                                    <option value="en-US-JasonNeural">Jason (Male·Neutral)</option>
+                                    <option value="en-US-SaraNeural">Sara (Female·Cheerful)</option>
+                                    <option value="en-US-TonyNeural">Tony (Male·Deep)</option>
+                                    <option value="en-US-NancyNeural">Nancy (Female·Professional)</option>
+                                    <option value="en-US-AmberNeural">Amber (Female·Energetic)</option>
+                                    <option value="en-US-CoraNeural">Cora (Female·Calm)</option>
+                                    <option value="en-US-ElizabethNeural">Elizabeth (Female·Elegant)</option>
+                                    <option value="en-US-MichelleNeural">Michelle (Female·Friendly)</option>
+                                    <option value="en-US-MonicaNeural">Monica (Female·Soft)</option>
+                                    <option value="en-US-BrandonNeural">Brandon (Male·Youth)</option>
+                                    <option value="en-US-ChristopherNeural">Christopher (Male·Warm)</option>
+                                    <option value="en-US-EricNeural">Eric (Male·Casual)</option>
+                                    <option value="en-US-JacobNeural">Jacob (Male·Calm)</option>
+                                    <option value="en-US-JennyMultilingualNeural">Jenny Multilingual</option>
+                                    <option value="en-US-RogerNeural">Roger (Male·Mature)</option>
+                                    <option value="en-US-SteffanNeural">Steffan (Male·Narrative)</option>
+                                </optgroup>
+                                <optgroup label="🇬🇧 English (UK)">
+                                    <option value="en-GB-SoniaNeural">Sonia (Female)</option>
+                                    <option value="en-GB-RyanNeural">Ryan (Male)</option>
+                                    <option value="en-GB-LibbyNeural">Libby (Female·Warm)</option>
+                                    <option value="en-GB-MaisieNeural">Maisie (Female·Cheerful)</option>
+                                    <option value="en-GB-ElliotNeural">Elliot (Male·Youth)</option>
+                                    <option value="en-GB-ThomasNeural">Thomas (Male·Neutral)</option>
+                                </optgroup>
+                                <optgroup label="🇦🇺 English (Australia)">
+                                    <option value="en-AU-NatashaNeural">Natasha (Female)</option>
+                                    <option value="en-AU-WilliamNeural">William (Male)</option>
+                                    <option value="en-AU-CarlyNeural">Carly (Female·Lively)</option>
+                                    <option value="en-AU-DarrenNeural">Darren (Male·Friendly)</option>
+                                </optgroup>
+                                <optgroup label="🇯🇵 日本語">
+                                    <option value="ja-JP-NanamiNeural">Nanami (女声)</option>
+                                    <option value="ja-JP-KeitaNeural">Keita (男声)</option>
+                                    <option value="ja-JP-AoiNeural">Aoi (女声·柔和)</option>
+                                    <option value="ja-JP-DaichiNeural">Daichi (男声·清朗)</option>
+                                    <option value="ja-JP-MayumiNeural">Mayumi (女声·温和)</option>
+                                    <option value="ja-JP-NaokiNeural">Naoki (男声·稳重)</option>
+                                </optgroup>
+                                <optgroup label="🇰🇷 한국어">
+                                    <option value="ko-KR-SunHiNeural">SunHi (여성)</option>
+                                    <option value="ko-KR-InJoonNeural">InJoon (남성)</option>
+                                    <option value="ko-KR-HyemiNeural">Hyemi (여성·밝음)</option>
+                                    <option value="ko-KR-JiMinNeural">JiMin (여성·차분)</option>
+                                    <option value="ko-KR-SeoYeonNeural">SeoYeon (여성·따뜻)</option>
+                                    <option value="ko-KR-YoungJoNeural">YoungJo (남성·부드러움)</option>
+                                </optgroup>
+                                <optgroup label="🇷🇺 Русский">
+                                    <option value="ru-RU-SvetlanaNeural">Svetlana (женский)</option>
+                                    <option value="ru-RU-DmitryNeural">Dmitry (мужской)</option>
+                                    <option value="ru-RU-DariyaNeural">Dariya (женский·дружелюбный)</option>
+                                    <option value="ru-RU-YekaterinaNeural">Yekaterina (женский·элегантный)</option>
+                                    <option value="ru-RU-GeorgiyNeural">Georgiy (мужской·спокойный)</option>
+                                </optgroup>
+                                <optgroup label="🇫🇷 Français">
+                                    <option value="fr-FR-DeniseNeural">Denise (féminin)</option>
+                                    <option value="fr-FR-HenriNeural">Henri (masculin)</option>
+                                    <option value="fr-FR-AlainNeural">Alain (masculin·chaleureux)</option>
+                                    <option value="fr-FR-BrigitteNeural">Brigitte (féminin·serein)</option>
+                                    <option value="fr-FR-CelesteNeural">Celeste (féminin·naturel)</option>
+                                    <option value="fr-FR-ClaudeNeural">Claude (masculin·neutre)</option>
+                                    <option value="fr-FR-CoralieNeural">Coralie (féminin·dynamique)</option>
+                                    <option value="fr-FR-EloiseNeural">Eloise (féminin·doux)</option>
+                                    <option value="fr-FR-JacquelineNeural">Jacqueline (féminin·élégant)</option>
+                                    <option value="fr-FR-JeromeNeural">Jerome (masculin·jeune)</option>
+                                    <option value="fr-FR-JosephineNeural">Josephine (féminin·chaleureux)</option>
+                                    <option value="fr-FR-MauriceNeural">Maurice (masculin·mature)</option>
+                                    <option value="fr-FR-YvesNeural">Yves (masculin·calme)</option>
+                                </optgroup>
+                                <optgroup label="🇩🇪 Deutsch">
+                                    <option value="de-DE-KatjaNeural">Katja (weiblich)</option>
+                                    <option value="de-DE-ConradNeural">Conrad (männlich)</option>
+                                    <option value="de-DE-AmalaNeural">Amala (weiblich·freundlich)</option>
+                                    <option value="de-DE-BerndNeural">Bernd (männlich·tief)</option>
+                                    <option value="de-DE-ChristophNeural">Christoph (männlich·ruhig)</option>
+                                    <option value="de-DE-ElkeNeural">Elke (weiblich·klar)</option>
+                                    <option value="de-DE-GiselaNeural">Gisela (weiblich·warm)</option>
+                                    <option value="de-DE-KasperNeural">Kasper (männlich·jugendlich)</option>
+                                    <option value="de-DE-KillianNeural">Killian (männlich·neutral)</option>
+                                    <option value="de-DE-KlarissaNeural">Klarissa (weiblich·ausgeprägt)</option>
+                                    <option value="de-DE-KlausNeural">Klaus (männlich·erwachsen)</option>
+                                    <option value="de-DE-LouisaNeural">Louisa (weiblich·weich)</option>
+                                    <option value="de-DE-MajaNeural">Maja (weiblich·natürlich)</option>
+                                    <option value="de-DE-RalfNeural">Ralf (männlich·erzählerisch)</option>
+                                    <option value="de-DE-TanjaNeural">Tanja (weiblich·munter)</option>
+                                </optgroup>
+                                <optgroup label="🇪🇸 Español">
+                                    <option value="es-ES-ElviraNeural">Elvira (femenino)</option>
+                                    <option value="es-ES-AlvaroNeural">Alvaro (masculino)</option>
+                                    <option value="es-ES-AbrilNeural">Abril (femenino·alegre)</option>
+                                    <option value="es-ES-ArnauNeural">Arnau (masculino·sereno)</option>
+                                    <option value="es-ES-DarioNeural">Dario (masculino·natural)</option>
+                                    <option value="es-ES-EliasNeural">Elias (masculino·cálido)</option>
+                                    <option value="es-ES-EstrellaNeural">Estrella (femenino·brillante)</option>
+                                    <option value="es-ES-IreneNeural">Irene (femenino·tranquilo)</option>
+                                    <option value="es-ES-LaiaNeural">Laia (femenino·dinámico)</option>
+                                    <option value="es-ES-LiaNeural">Lia (femenino·suave)</option>
+                                    <option value="es-ES-NilNeural">Nil (masculino·joven)</option>
+                                    <option value="es-ES-SaulNeural">Saul (masculino·maduro)</option>
+                                    <option value="es-ES-TeoNeural">Teo (masculino·amigable)</option>
+                                    <option value="es-ES-TrianaNeural">Triana (femenino·elegante)</option>
+                                    <option value="es-ES-VeraNeural">Vera (femenino·sereno)</option>
+                                </optgroup>
+                                <optgroup label="🇮🇹 Italiano">
+                                    <option value="it-IT-ElsaNeural">Elsa (femminile)</option>
+                                    <option value="it-IT-IsabellaNeural">Isabella (femminile·caldo)</option>
+                                    <option value="it-IT-DiegoNeural">Diego (maschile)</option>
+                                    <option value="it-IT-BenignoNeural">Benigno (maschile·sereno)</option>
+                                    <option value="it-IT-CalimeroNeural">Calimero (maschile·giovane)</option>
+                                    <option value="it-IT-CataldoNeural">Cataldo (maschile·profondo)</option>
+                                    <option value="it-IT-FabiolaNeural">Fabiola (femminile·elegante)</option>
+                                    <option value="it-IT-FlorianaNeural">Floriana (femminile·dolce)</option>
+                                    <option value="it-IT-GianniNeural">Gianni (maschile·narrativo)</option>
+                                    <option value="it-IT-ImeldaNeural">Imelda (femminile·chiaro)</option>
+                                    <option value="it-IT-IrmaNeural">Irma (femminile·vivace)</option>
+                                    <option value="it-IT-LisandroNeural">Lisandro (maschile·calmo)</option>
+                                    <option value="it-IT-PalmiraNeural">Palmira (femminile·naturale)</option>
+                                    <option value="it-IT-PierinaNeural">Pierina (femminile·raffinato)</option>
+                                    <option value="it-IT-RinaldoNeural">Rinaldo (maschile·maturo)</option>
+                                </optgroup>
+                                <optgroup label="🇵🇹 Português (Brasil)">
+                                    <option value="pt-BR-FranciscaNeural">Francisca (feminino)</option>
+                                    <option value="pt-BR-AntonioNeural">Antonio (masculino)</option>
+                                    <option value="pt-BR-BrendaNeural">Brenda (feminino·alegre)</option>
+                                    <option value="pt-BR-DonatoNeural">Donato (masculino·calmo)</option>
+                                    <option value="pt-BR-ElzaNeural">Elza (feminino·sereno)</option>
+                                    <option value="pt-BR-FabioNeural">Fabio (masculino·natural)</option>
+                                    <option value="pt-BR-GiovannaNeural">Giovanna (feminino·jovem)</option>
+                                    <option value="pt-BR-HumbertoNeural">Humberto (masculino·profundo)</option>
+                                    <option value="pt-BR-JulioNeural">Julio (masculino·amigável)</option>
+                                    <option value="pt-BR-LeilaNeural">Leila (feminino·elegante)</option>
+                                    <option value="pt-BR-LeticiaNeural">Leticia (feminino·suave)</option>
+                                    <option value="pt-BR-ManuelaNeural">Manuela (feminino·vivo)</option>
+                                    <option value="pt-BR-NicolasNeural">Nicolas (masculino·jovem)</option>
+                                    <option value="pt-BR-ThalitaNeural">Thalita (feminino·brilhante)</option>
+                                    <option value="pt-BR-ValerioNeural">Valerio (masculino·maduro)</option>
+                                </optgroup>
+                                <!-- 你可以继续添加更多语言分组 -->
                             </select>
+                            <!-- ========== 修改结束 ========== -->
                         </div>
                         
                         <div class="form-group">
